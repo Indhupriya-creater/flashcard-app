@@ -34,8 +34,11 @@ An interactive educational flashcard and study tool that mimics the core feature
 flashcard-app/
 │
 ├── index.html # Main HTML structure
+
 ├── style.css # Styling for layout and responsiveness
+
 ├── script.js # Logic for auth, flashcards, and UI updates
+
 └── README.md # Project documentation
 
 > 📌 *Note:* All user data is stored in memory (non-persistent). Refreshing the browser will clear all data.
