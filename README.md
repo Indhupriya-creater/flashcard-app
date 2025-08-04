@@ -32,7 +32,7 @@ An interactive educational flashcard and study tool that mimics the core feature
 ## 📁 Project Structure
 
 flashcard-app/
-│
+
 ├── index.html # Main HTML structure
 
 ├── style.css # Styling for layout and responsiveness
