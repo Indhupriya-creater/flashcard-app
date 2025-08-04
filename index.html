@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Flashcard App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>📚 Flashcard App</h1>
+
+    <!-- User Auth Section -->
+    <div id="auth-section">
+      <div id="register">
+        <h2>Register</h2>
+        <input type="text" id="reg-name" placeholder="Name" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Password" />
+        <button onclick="registerUser()">Register</button>
+      </div>
+      <div id="login">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="loginUser()">Login</button>
+      </div>
+    </div>
+    <!-- Profile Section -->
+    <div id="profile" class="profile" style="display: none;">
+        <h2>👤 Profile</h2>
+        <p><strong>Name:</strong> <span id="profile-name"></span></p>
+        <p><strong>Email:</strong> <span id="profile-email"></span></p>
+        <p><strong>Flashcards Created:</strong> <span id="profile-card-count"></span></p>
+    </div>
+    <div id="main-app" style="display: none">
+      <div class="form">
+        <input type="text" id="front" placeholder="Front (Question)" />
+        <input type="text" id="back" placeholder="Back (Answer)" />
+        <button onclick="addFlashcard()">Add Flashcard</button>
+      </div>
+
+      <div class="flashcards" id="flashcards"></div>
+
+      <button onclick="logoutUser()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
